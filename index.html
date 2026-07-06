@@ -38,6 +38,12 @@
     const egg = document.getElementById('easterEgg');
     let clicks = 0;
 
+    // Reset easter egg on page load
+    window.addEventListener('load', () => {
+      egg.classList.remove('visible');
+      clicks = 0;
+    });
+
     avatar.addEventListener('click', () => {
       clicks += 1;
       if (clicks >= 5) {
