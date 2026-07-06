@@ -36,11 +36,6 @@ body::before{
 .about h2{margin:0 0 8px}
 .about p{margin:0;color:var(--muted);line-height:1.5}
 
-.music{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(125,211,252,0.05), rgba(125,211,252,0.02));border:1px solid rgba(125,211,252,0.1)}
-.music h2{margin:0 0 8px;color:#7dd3fc}
-.music p{margin:0 0 12px;color:var(--muted)}
-.music iframe{max-width:100%;border-radius:8px}
-
 .easter-egg{display:none;margin-top:24px;padding:18px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(125,211,252,0.12);color:#c7d8ff;text-align:left}
 .easter-egg.visible{display:block}
 .easter-egg h2{margin-top:0;color:#7dd3fc}
