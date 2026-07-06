@@ -35,6 +35,10 @@ body::before{
 .about h2{margin:0 0 8px}
 .about p{margin:0;color:var(--muted);line-height:1.5}
 
+.easter-egg{display:none;margin-top:24px;padding:18px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(125,211,252,0.12);color:#c7d8ff;text-align:left}
+.easter-egg.visible{display:block}
+.easter-egg h2{margin-top:0;color:#7dd3fc}
+
 @media (max-width:480px){
   .avatar{width:140px;height:140px}
   .link{padding:10px 14px}

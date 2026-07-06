@@ -25,6 +25,26 @@
         Soy una buena persona y soy gracioso.
       </p>
     </section>
+
+    <section class="easter-egg" id="easterEgg">
+      <h2>¡Easter Egg!</h2>
+      <p>Encontraste la sección secreta. Eres demasiado curioso, me gusta eso.</p>
+      <p>Mensaje secreto: “La mejor página siempre está en construcción.”</p>
+    </section>
   </main>
+
+  <script>
+    const avatar = document.getElementById('avatar');
+    const egg = document.getElementById('easterEgg');
+    let clicks = 0;
+
+    avatar.addEventListener('click', () => {
+      clicks += 1;
+      if (clicks >= 5) {
+        egg.classList.toggle('visible');
+        clicks = 0;
+      }
+    });
+  </script>
 </body>
 </html>
