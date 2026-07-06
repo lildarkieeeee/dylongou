@@ -34,12 +34,16 @@
   </main>
 
   <script>
+    const easterEgg = document.getElementById('easterEgg');
     let clickCount = 0;
+
+    // Ensure easter egg is hidden on page load
+    easterEgg.classList.remove('visible');
+    
     document.getElementById('avatar').addEventListener('click', function() {
       clickCount++;
-      console.log('Clics: ' + clickCount);
       if (clickCount >= 5) {
-        document.getElementById('easterEgg').classList.toggle('visible');
+        easterEgg.classList.toggle('visible');
         clickCount = 0;
       }
     });
